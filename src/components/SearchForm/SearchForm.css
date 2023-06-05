@@ -1,0 +1,31 @@
+.search-form-elem{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.search-form-control{
+    width: 420px;
+    height: 40px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.search-form-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding-left: 370px;
+}
+
+.search-form-elem .search-form-control::placeholder{
+    opacity: 0.6;
+}
+
+.search-form-icon{
+    width: 32px;
+    height: 32px;
+    margin-left: 0.5rem;
+    color: var(--red-color);
+}

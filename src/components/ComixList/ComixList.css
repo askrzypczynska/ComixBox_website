@@ -1,0 +1,10 @@
+.comixList-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    text-align: center;
+}
+
+.comic-item-img img{
+    max-width: 300px;
+    height: auto;
+}

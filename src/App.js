@@ -1,16 +1,13 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
-import { useCallback } from "react";
-import axios from 'axios'
-import { ReactDOM } from 'react';
+import React, {useState, useEffect} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Home from '../src/pages/Home/Home'
 import About from '../src/pages/About/About'
 import ComixDetails from '../src/components/ComixDetails/ComixDetails'
 import ComixList from '../src/components/ComixList/ComixList'
-
+import comicsApi from 'comicbooks-api';
 import { AppProvider } from './content';
-
 
 function App() {
 

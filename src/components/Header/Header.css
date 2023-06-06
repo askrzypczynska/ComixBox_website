@@ -1,36 +1,12 @@
-
 .header-content {
     min-height: 75vh;
-    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url("../../img/comixback.jpg") center/cover no-repeat;
     text-align: center;
-}
-
-.header-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url("../../img/comixback.jpg") center/cover no-repeat;
-    opacity: 0.6;
-    z-index: -1;
-}
-
-.header-content-inner{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
 }
+
 
 .header-title{
     font-size: 4.5rem;
@@ -44,7 +20,5 @@
     margin-bottom: 2.8rem;
     opacity: 0.8;
     max-width: 770px;
-    margin-right: auto;
-    margin-left: auto;
     font-size: 1.8rem;
 }

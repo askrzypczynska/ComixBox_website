@@ -12,11 +12,13 @@ function Comixlist() {
     return {
       ...comicSingle,
       id: comicSingle.id,
-      cover_img: comicSingle.coverPage ? comicSingle.coverPage : coverImg
+      cover_img: comicSingle.coverPage ? comicSingle.coverPage : coverImg,
+      description: comicSingle.description
     }
   });
 
-  console.log(comics);
+
+  // console.log(comics);
 
   if(loading) return <Loader />;
 
@@ -26,11 +28,11 @@ function Comixlist() {
         <div className='section-title'>
           <h2>{resultTitle}</h2>
         </div>
-        <div className='comixList-content grid'>
+        <div className='comixList-content'>
           {
             comicsWithCovers.slice(0, 30).map((item, index) => {
               return (
-                <Comic key={index} {...item} />
+                <Comic key={index} {...item}/>
               )
             })
           }

@@ -40,7 +40,7 @@ const AppProvider = ({children}) => {
                     setResultTitle("Proposed Comics for You");
                     setSerched(true)
                 }
-                if(searched && newComics.length > 1){
+                if(searched && newComics.length >= 1){
                     setResultTitle("Your Search Result");
                 } else if(searched) {
                     setResultTitle("No Search Result Found!")

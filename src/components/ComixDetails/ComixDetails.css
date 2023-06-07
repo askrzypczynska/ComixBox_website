@@ -1,0 +1,55 @@
+.comixDetails{
+    padding: 20px;
+}
+
+.comixDetails-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+  
+.comixDetails-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.comixDetails-img img{
+    width: 500px;
+}
+  
+.comixDetails-info {
+    flex: 2;
+    margin: 20px;
+}
+  
+.comixDetails-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.description{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+@media (max-width: 850px) {
+    .comixDetails{
+        padding: 10px;
+    }
+
+    .comixDetails-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comixDetails-img img{
+        width: 400px;
+    }
+
+    .comixDetails-title{
+        text-align: center;
+    }
+  }

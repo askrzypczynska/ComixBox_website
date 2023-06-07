@@ -1,7 +1,11 @@
-.loader{
-    padding: 4rem 0;
-}
-
-.loader img {
-    width: 120px;
-}
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
+  .loader img {
+    width: 100px;
+    height: 100px;
+  }
